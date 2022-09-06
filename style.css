@@ -1,0 +1,167 @@
+* {
+    font-family:  Helvetica, sans-serif;
+    box-sizing: border-box;
+
+}
+
+body {
+    color: white;
+    background: linear-gradient(to right, rgb(150, 100, 150), rgb(255, 20, 150)); 
+    margin: 0;
+    padding: 0;
+   
+}
+
+
+.header-container {   
+    border: 2px black;
+    background-color: rgb(255, 150, 255);
+    padding: 20px;
+    display: flex;
+    justify-content: center;  
+   
+}
+
+
+.header {
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.benchquestion {
+    margin: 13px;
+    align-items: center; 
+    font-size: 20px;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+
+}
+
+.date {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    ;
+}
+
+.main-container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;  
+}
+
+.calculator {
+    border: 4px solid rgb(255, 181, 255);
+    padding: 20px;
+    height: 450px;
+    width: 350px;
+    border-radius: 30px;
+    background-color: rgb(255,230,255);
+    color:rgb(100, 0, 92);
+    box-shadow: 3px 3px rgb(203, 73, 186);
+} 
+
+.main-text {
+
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 1px rgb(181, 132, 246);
+    font-weight: 4000;
+    border: 0;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    background-color:rgb(255, 164, 228);
+}
+
+.text-one {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.weight-container {
+    display: flex;
+    justify-content: center;   
+    padding: 7px;
+}
+
+#weight, #units {
+    border: none;
+    appearance: none;
+    background-color: #f2f2f2;
+    outline: none;
+
+}
+
+#units {
+    padding: 5.2px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 35px;
+}
+
+#weight {
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    width:120px;
+    height: 35px
+}
+#units:hover {
+    cursor: pointer;
+    
+}
+
+#weight:focus::placeholder {
+    color: transparent;
+}
+
+#weight::placeholder {
+    color: #222;
+    transition: color 0.3s ease;
+
+}
+
+.text-two {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.slider-container, .enter-button{
+    display: flex;
+    justify-content: center;
+    padding: 5x;
+}
+
+.enter-button {
+
+    margin-top: 25px;
+}
+
+#enter {
+
+    border: 0;
+    padding: 30px;
+    border-radius: 7px;
+    background-color: rgb(252, 135, 217);
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+#enter:hover {
+    cursor: pointer;
+}

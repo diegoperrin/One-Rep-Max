@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <title>One Rep Max Calculator</title>
+</head>
+  <body>
+
+    <div class="header-container">
+        <div class="header">
+            <div class="logo">logo here</div>
+            <div class="benchquestion">How much can <b>you</b> bench?</div>
+            <div class="date"> date here</div>    
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="calculator">
+            <div class="main-text"> One Rep Max Calculator</div>
+            <div class="text-one">I can Bench:</div>
+            <div class="weight-container">
+                <div class="enter-weight"><input type="number" id="weight" placeholder="Enter Weight"></div>
+                <div id="dropdown-units">
+                    <select id="units">
+                        <option value="lbs">lbs</option>
+                        <option value="kg">Kg</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="text-two">How many reps?</div>
+            <div class="slider-container">
+                <input type="range" id="reps" min="1" max="12" oninput="this.nextElementSibling.value = this.value">
+                <output>7</output>
+            </div>
+            
+            <div class="enter-button">
+                <button type="button" id="enter">What's my One rep max?</button>
+             </div>
+           
+        </div>
+    </div>
+
+
+  </body>
+</html>
