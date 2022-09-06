@@ -143,8 +143,15 @@ body {
 
 .slider-container, .enter-button{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding: 5x;
+}
+
+.slider-container{
+    width: 200px;
+    margin-left: 60px;
+
+    
 }
 
 .enter-button {
@@ -164,4 +171,31 @@ body {
 
 #enter:hover {
     cursor: pointer;
+}
+
+#output{
+    padding: 5x;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#reps{
+    background: rgb(127, 9, 102);
+    appearance: none;
+    height: 4px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 150px;
+
+}
+
+#reps::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: rgb(242, 60, 206);
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+
 }
