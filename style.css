@@ -171,8 +171,15 @@ body {
 
 #enter:hover {
     cursor: pointer;
+    background: rgb(218, 82, 177);
+    transition: 0.3s ease;
 }
-
+/*
+#enter:not(:hover) {
+    background: rgb(252, 135, 217);
+    transition: 0.3s ease;
+}
+*/
 #output{
     padding: 5x;
     font-size: 20px;
@@ -199,3 +206,18 @@ body {
     border-radius: 50px;
 
 }
+
+.modal {
+    max-width: 70%;
+    width:500px ;
+    height:600px;
+    border-radius: 20px;
+    border: 0;
+    box-shadow: #222;
+}
+
+
+.modal::backdrop {
+    background: rgb(0 0 0 / 0.4);
+  }
+  
