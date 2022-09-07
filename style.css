@@ -9,7 +9,6 @@ body {
     background: linear-gradient(to right, rgb(150, 100, 150), rgb(255, 20, 150)); 
     margin: 0;
     padding: 0;
-    min-height: 100vh;
    
 }
 
@@ -59,6 +58,8 @@ body {
     justify-content: center;
     padding: 70px;
     padding-bottom: 60px;  
+    min-height: 50vh;
+
 }
 
 .calculator {
@@ -316,8 +317,8 @@ body {
 
 .footer {
     display: flex;
-
     justify-content: center;
+    max-height: 100vh;
     
 
 }
@@ -335,8 +336,9 @@ body {
     display: inline-block;
     align-items: middle;
     position: relative;
- 
+
     margin-top: 6px;
+
 
 
 }
