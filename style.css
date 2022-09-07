@@ -174,12 +174,14 @@ body {
     background: rgb(218, 82, 177);
     transition: 0.3s ease;
 }
+
 /*
 #enter:not(:hover) {
     background: rgb(252, 135, 217);
     transition: 0.3s ease;
 }
 */
+
 #output{
     padding: 5x;
     font-size: 20px;
@@ -212,8 +214,8 @@ body {
     width:500px ;
     height:600px;
     border-radius: 20px;
-    border: 0;
-    box-shadow: #222;
+    border: 2px solid rgb(248, 233, 244);
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
 }
 
 
@@ -221,3 +223,26 @@ body {
     background: rgb(0 0 0 / 0.4);
   }
   
+.header-modal {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+#modal-text {
+    font-size: 30px;
+    margin-top: 0px;
+}
+
+#close{
+    appearance: none;
+    border: 0;
+    background: white;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+#close:hover {
+    cursor: pointer;
+}

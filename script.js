@@ -25,6 +25,7 @@ closeModal.addEventListener('click', () => {
 function Calculate(){
     let wei = weight.value;
     let reps = repnum.innerHTML
+    
 
 /* 
     alert(wei)
