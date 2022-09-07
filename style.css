@@ -9,6 +9,7 @@ body {
     background: linear-gradient(to right, rgb(150, 100, 150), rgb(255, 20, 150)); 
     margin: 0;
     padding: 0;
+    min-height: 100vh;
    
 }
 
