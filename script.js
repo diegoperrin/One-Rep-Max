@@ -1,3 +1,20 @@
+
+document.addEventListener("DOMContentLoaded", function(){
+    
+    const today_date = document.getElementById("todays-date")
+
+    let today = new Date()
+    let month = today.getMonth() + 1
+    let year = today.getFullYear()
+    let date = today.getDate()
+
+    let current_date = `${month}/${date}/${year}`
+    today_date.innerHTML = current_date
+
+})
+
+
+
 const btn = document.getElementById("enter")
 const weight = document.getElementById("weight")
 const repnum = document.getElementById("output")
@@ -64,3 +81,6 @@ function Calculate(){
 }
 
 btn.addEventListener('click', Calculate)
+
+
+

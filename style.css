@@ -44,19 +44,20 @@ body {
 
 }
 
-.date {
+#todays-date {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    ;
-}
+    font-size: 23px;
+  }
 
 .main-container {
 
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 100px;  
+    padding: 70px;
+    padding-bottom: 60px;  
 }
 
 .calculator {
@@ -123,6 +124,7 @@ body {
     cursor: pointer;
     
 }
+
 
 #weight:focus::placeholder {
     color: transparent;
@@ -207,6 +209,11 @@ body {
     width: 15px;
     border-radius: 50px;
 
+}
+
+
+#reps::-webkit-slider-thumb:hover{
+    cursor: pointer;
 }
 
 .modal {
@@ -304,4 +311,51 @@ body {
 #congrats {
     width: 250px;
     height: auto;
+}
+
+.footer {
+    display: flex;
+
+    justify-content: center;
+    
+
+}
+
+#github {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: auto;
+    margin-left:10px;
+
+}
+
+.copyright {
+    display: inline-block;
+    align-items: middle;
+    position: relative;
+ 
+    margin-top: 6px;
+
+
+}
+
+#github:hover {
+
+    cursor: pointer;
+    width: 35px;
+    transition: 0.2s ease;
+}
+
+#github:not(:hover) {
+    width: 30px;
+    transition: 0.2s ease;
+}
+
+#gitcontainer{
+
+    width: 50px;
+    display: inline-block;
+    height: 40px;
+
 }
