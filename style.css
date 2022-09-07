@@ -246,3 +246,8 @@ body {
 #close:hover {
     cursor: pointer;
 }
+
+#benchdude{
+    width:80px;
+    height: auto;
+}

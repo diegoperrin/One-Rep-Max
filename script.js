@@ -1,7 +1,7 @@
 const btn = document.getElementById("enter")
 const weight = document.getElementById("weight")
-const units = document.getElementById("units").value
 const repnum = document.getElementById("output")
+
 const slider = document.getElementById("reps").oninput = function(){
     const value = (this.value-this.min)/(this.max)*100
     repnum.innerHTML = this.value
@@ -22,11 +22,35 @@ closeModal.addEventListener('click', () => {
 
 } )
 
+
+const orm = document.getElementById("result")
+const ormunits = document.getElementById("unitresult")
+
+function selectunits() {
+    const select = document.getElementById("units");
+    const units = select.options[select.selectedIndex].text;
+    ormunits.innerHTML = units
+ 
+}
+
+
 function Calculate(){
     let wei = weight.value;
     let reps = repnum.innerHTML
-    
 
+    const result = wei*(1 + reps/30);
+
+    if(reps == 1){
+        orm.innerHTML = wei
+    }
+    else if (ormunits.innerHTML == "Kg") {
+        modified = (result * 2.205);
+        orm.innerHTML = modified
+    } 
+    else {
+        orm.innerHTML = result
+    }
+    
 /* 
     alert(wei)
     alert(units)

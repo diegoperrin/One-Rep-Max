@@ -13,7 +13,7 @@
 
     <div class="header-container">
         <div class="header">
-            <div class="logo">logo here</div>
+            <div class="logo"><img id="benchdude" src="./benchgif.gif"></div>
             <div class="benchquestion">How much can <b>you</b> bench?</div>
             <div class="date"> date here</div>    
         </div>
@@ -25,7 +25,7 @@
             <div class="weight-container">
                 <div class="enter-weight"><input type="number" id="weight" placeholder="Enter Weight"></div>
                 <div id="dropdown-units">
-                    <select id="units">
+                    <select id="units" name="units" onchange="selectunits()">
                         <option value="lbs">lbs</option>
                         <option value="kg">Kg</option>
                     </select>
@@ -50,7 +50,7 @@
             <button class="button close-button" id="close">&times;</button>
         </div>
         <div class="resultholder">
-            <div id="result">145</div><div id="unitresult">lbs</div>
+            <div id="result"></div><div id="unitresult">lbs</div>
         </div>
         
         
