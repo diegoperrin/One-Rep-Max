@@ -35,18 +35,19 @@ function selectunits() {
 
 
 function Calculate(){
+    
+    
     let wei = weight.value;
+
     let reps = repnum.innerHTML
 
-    const result = wei*(1 + reps/30);
+    const result = Math.round(wei*(1 + reps/30));
+ 
+
 
     if(reps == 1){
         orm.innerHTML = wei
     }
-    else if (ormunits.innerHTML == "Kg") {
-        modified = (result * 2.205);
-        orm.innerHTML = modified
-    } 
     else {
         orm.innerHTML = result
     }
@@ -55,6 +56,10 @@ function Calculate(){
     alert(wei)
     alert(units)
     alert(repnum.innerHTML)
+        else if (ormunits.innerHTML == "Kg") {
+        modified = (result * 2.205);
+        orm.innerHTML = modified
+    } 
 */
 }
 

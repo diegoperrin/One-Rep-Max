@@ -1,5 +1,5 @@
 * {
-    font-family:  Helvetica, sans-serif;
+    font-family:  "Montserrat", sans-serif;
     box-sizing: border-box;
 
 }
@@ -175,12 +175,12 @@ body {
     transition: 0.3s ease;
 }
 
-/*
+
 #enter:not(:hover) {
     background: rgb(252, 135, 217);
     transition: 0.3s ease;
 }
-*/
+
 
 #output{
     padding: 5x;
@@ -216,6 +216,7 @@ body {
     border-radius: 20px;
     border: 2px solid rgb(248, 233, 244);
     box-shadow: 0 0 1em rgb(0 0 0 / .3);
+    background-image: linear-gradient(to top, rgb(246, 216, 250), white);
 }
 
 
@@ -225,19 +226,24 @@ body {
   
 .header-modal {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin-right: 30px;
 }
 
 #modal-text {
-    font-size: 30px;
-    margin-top: 0px;
+    display: flex;
+    font-size: 40px;
+    font-weight: bold;
+    justify-content: center;
+    margin-top: 30px;
+    
+
 }
 
 #close{
     appearance: none;
     border: 0;
-    background: white;
+    background:transparent;
     font-weight: bold;
     font-size: 30px;
 
@@ -249,5 +255,53 @@ body {
 
 #benchdude{
     width:80px;
+    height: auto;
+}
+
+.resultholder{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 400px;
+
+    margin-left: 30px;
+}
+#result {
+    display: flex;
+    font-size: 150px;
+    margin-top: 30px;
+    justify-content: center;
+    margin-left: 30px;
+    font-weight: bold;
+    background-image: linear-gradient(45deg, rgb(216, 23, 216), rgb(255, 202, 148));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent
+
+
+}
+
+#unitresult{
+    font-size: 40px;
+    margin: 30px;
+    margin-bottom: 25px;
+    color: rgb(74, 58, 41);
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    color: grey;
+    margin-top: 15px;
+}
+
+
+.messageholder{
+    display: flex;
+    justify-content: center;
+}
+
+#congrats {
+    width: 250px;
     height: auto;
 }

@@ -23,7 +23,7 @@
             <div class="main-text"> One Rep Max Calculator</div>
             <div class="text-one">I can Bench:</div>
             <div class="weight-container">
-                <div class="enter-weight"><input type="number" id="weight" placeholder="Enter Weight"></div>
+                <div class="enter-weight"><input type="tel" id="weight" placeholder="Enter Weight" maxlength=3></div>
                 <div id="dropdown-units">
                     <select id="units" name="units" onchange="selectunits()">
                         <option value="lbs">lbs</option>
@@ -45,16 +45,15 @@
         </div>
     </div>
     <dialog class="modal" id="modal">
-        <div class="header-modal">
-            <div id="modal-text">Your One Rep Max is:</div>
+        <div class="header-modal">    
             <button class="button close-button" id="close">&times;</button>
         </div>
+        <div id="modal-text">Your One Rep Max is:</div>
         <div class="resultholder">
             <div id="result"></div><div id="unitresult">lbs</div>
-        </div>
-        
-        
-        
+        </div>  
+        <div class="info">1 Kg ≈ 2.205 lbs and 1 lb ≈ 0.45 Kgs</div>
+        <div class="messageholder"><img id="congrats" src="./congrats.gif"></div>
     </dialog>
 
   <script src="./script.js"></script>
